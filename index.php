@@ -16,30 +16,30 @@
 
     <!-- All CSS Files -->
     <!-- Library - Bootstrap v3.3.6-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Library - OWL Carousel CSS-->
-    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <!-- Library - Font Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <!-- Library - PE Icon 7 Stroke CSS  -->
-    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
     <!-- Library - Animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Library - Venobox CSS -->
-    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="assets/css/venobox.css">
     <!-- Library - RS slider CSS -->
-    <link rel="stylesheet" type="text/css" href="lib/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/rs-plugin/css/settings.css" media="screen" />
     <!-- Theme all shortcode elements style -->
-    <link rel="stylesheet" href="css/shortcodes/shortcodes.css">
+    <link rel="stylesheet" href="assets/css/shortcodes/shortcodes.css">
     <!-- Custom - Theme CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
     <!-- Custom - Theme Color CSS -->
-    <link rel="stylesheet" href="css/color/color-one.css">
+    <link rel="stylesheet" href="assets/css/color/color-one.css">
     <!-- Theme Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Modernizr Js -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -107,7 +107,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="img/unicef.png" alt="Chania">
+                    <img src="assets/img/unicef.png" alt="Chania">
                     <div class="carousel-caption">
                         <h3>Article 1</h3>
                         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="img/unicef.png" alt="Chania">
+                    <img src="assets/img/unicef.png" alt="Chania">
                     <div class="carousel-caption">
                         <h3>Article 2</h3>
                         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -125,7 +125,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="img/unicef.png" alt="Flower">
+                    <img src="assets/img/unicef.png" alt="Flower">
                     <div class="carousel-caption">
                         <h3>Article 3</h3>
                         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -134,7 +134,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="img/unicef.png" alt="Flower">
+                    <img src="assets/img/unicef.png" alt="Flower">
                     <div class="carousel-caption">
                         <h3>Article 4</h3>
                         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -175,6 +175,7 @@
         </div>
     </div>
 
+    <!--Footer-->
     <footer>
       <div class="col-md-12">
         <div class="col-md-4">
@@ -218,28 +219,28 @@
     </footer>
     <!-- All JS Files -->
     <!-- JQuery v1.11.3-->
-    <script src="js/vendor/jquery-1.12.3.min.js"></script>
+    <script src="assetsjs/vendor/jquery-1.12.3.min.js"></script>
     <!-- Library - Bootstrap v3.3.5 -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assetsjs/bootstrap.min.js"></script>
     <!-- Slider Revolution Plugin js -->
-    <script type="text/javascript" src="lib/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="lib/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="lib/rs-plugin/rs.home.js"></script>
+    <script type="text/javascript" src="assetslib/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assetslib/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assetslib/rs-plugin/rs.home.js"></script>
     <!-- Library - OWL Carousel -->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="assetsjs/owl.carousel.min.js"></script>
     <!-- Library - WOW Js -->
-    <script src="js/wow.js"></script>
+    <script src="assetsjs/wow.js"></script>
     <!-- Library - Theme  Plugins js -->
-    <script src="js/plugins.js"></script>
+    <script src="assetsjs/plugins.js"></script>
     <!-- Library - isotope js -->
-    <script src="js/jquery.isotope.js"></script>
+    <script src="assetsjs/jquery.isotope.js"></script>
     <!-- Library - waypoints js -->
-    <script src="js/waypoints.min.js"></script>
+    <script src="assetsjs/waypoints.min.js"></script>
     <script>
         new WOW().init();
     </script>
     <!-- Library - Theme JS -->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

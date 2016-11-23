@@ -43,7 +43,7 @@
     <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 50%;
       margin: auto;
   }
   </style>
@@ -86,10 +86,14 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+    <!--Logo-->
     <div class="">
         <img src="img/unicef.png">
     </div>
 
+    <h1>Bienvenue sur le site d'UNICEF Campus Paris</h1>
+
+    <!--Carousel des articles-->
     <div class="container-fluid">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -129,6 +133,11 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+    </div>
+
+    <div class="col-md-12" style="margin-left: 15%;">
+        <div class="col-md-6" style="border-right: 1px solid black;">Bloc 1</div>
+        <div class="col-md-6">Bloc 2</div>
     </div>
     <!-- All JS Files -->
     <!-- JQuery v1.11.3-->

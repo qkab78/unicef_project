@@ -1,0 +1,51 @@
+/*--------------------------------------
+	Chairman Home Color Four
+--------------------------------------------*/
+a:hover,
+.header-v5 .primary-menu ul li:hover a,
+.header-v4 .header-social-bookmark ul li a:hover,
+.blog-post-title  a:hover,
+.shear-links.pull-left a:hover,
+.comments-like a:hover i,
+.post-title-page a:hover,
+.post-link a:hover,
+.footer-style-two .copy-right-text > a:hover,
+.footer-menu li a:hover,
+.popular-post-content a:hover,
+.widget-content .blogers-name a:hover,
+.cat-list li a:hover,
+.header-v5 .header-social-bookmark ul li a:hover,
+.slider-area-blog .blog-post-title > a:hover,
+.slider-area-blog .blog-post-meta a:hover,
+.author-desc > h5 a:hover,
+.popular-single > h5 a:hover,
+.cat-name {
+  color: #4fc1f0;
+}
+.header-v5 .top-search-form button,
+.widget-newsletter-form > button:hover,
+.carousel-style-7.owl-theme .owl-controls .owl-buttons div:hover {
+  background: #81ad7b none repeat scroll 0 0;
+}
+.header-v5 .top-search-form button:hover{
+  background: #71996b;
+}
+.cat-name:hover{
+  color: #444;
+}
+.green-bg-menu .primary-menu ul li:hover a{
+	color: #424242;
+}
+.more-btn-solid:hover,
+.carousel-style-7.owl-theme .owl-controls .owl-buttons div,
+.newsletter-form.dark-bg > button{
+	background: #4fc1f0;
+}
+.widget .widget-title::before,
+.widget .widget-title::after,
+.btn-submitt:hover {
+  background: #4fc1f0 none repeat scroll 0 0;
+}
+.newsletter-form.dark-bg > button:hover{
+	background: #3e3e3e;
+}

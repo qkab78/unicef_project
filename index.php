@@ -135,10 +135,57 @@
         </div>
     </div>
 
-    <div class="col-md-12" style="margin-left: 15%;">
-        <div class="col-md-6" style="border-right: 1px solid black;">Bloc 1</div>
-        <div class="col-md-6">Bloc 2</div>
+    <div class="col-md-12" style="">
+        <div id="bloc" class="col-md-6">
+            <h3>Les missions des étudiants UNICEF Campus</h3>
+            <p>- Représenter UNICEF  dans son entourage et fais connaître ses missions.</p>
+            <p>- Créer des antennes Campus au sein des établissements d'enseignement supérieur.</p>
+            <p>- Relayer les messages et campagnes d'UNICEF France auprès du public éudiant.</p>
+            <p>- Travailler en réseau avec d'autres associations pour un monde plus solidaire.</p>
+            <p>- Veiller à la pérénnité de l'antenne au sein des facs et écoles.</p>
+            <p>- Intégrer une communauté de jeunes engagés pour porter la voix des enfants et des jeunes en France et dans le monde.</p>
+        </div>
+        <div class="col-md-6">
+            <h3>Les actions des étudiants UNICEF Campus</h3>
+            <p>- Organiser des évènements scolaires : expositions, conférences, colloques, concerts, spectacles, afterworks, tables rondes sur les enjeux de l'enfance en France, la situation des enfants dans le monde, les enjeux du développement, la place des jeunes dans la société...</p>
+            <p>- Mener des animations de de sensibilisation sur les droits de l'enfant dans les collèges et lycées.</p>
+            <p>- Accompagner les Jeunes ambassadeurs de l'UNICEF France ans le cadre de leur mission.</p>
+            <p>- Créer des Clubs UNICEF et suivre leurs projets tout au long de l'année.</p>
+            <p>- Participer à la Journée Bleue.</p>
+        </div>
     </div>
+
+    <footer>
+      <div class="col-md-12">
+          <div class="col-md-4">
+            <h4>
+                En savoir plus sur l'UNICEF ?<br>
+                <a href="#">Cliquez ici</a>
+            </h4>
+              
+                <h4>
+                    En savoir plus sur le Comité de Paris ?<br>
+                    <a href="#">Cliquez ici</a>
+                </h4>
+              
+          </div>
+          <div class="col-md-3">
+              <h4>Restons en contact !</h4>
+              <p>FB</p>
+              <p>Twitter</p>
+              <p>Youtube</p>
+          </div>
+          <div class="col-md-4">
+              <h4>Inscrivez-vous à notre newsletter !</h4>
+              <form>
+                  <label>Prénom</label>
+                  <input class="form-control" type="text" name="firstname"><br>
+                  <label>Nom</label>
+                  <input class="form-control" type="text" name="lastname">
+              </form>
+          </div>
+      </div>
+    </footer>
     <!-- All JS Files -->
     <!-- JQuery v1.11.3-->
     <script src="js/vendor/jquery-1.12.3.min.js"></script>

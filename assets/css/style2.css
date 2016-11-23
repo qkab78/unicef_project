@@ -2,3 +2,31 @@
 #iconCustom{font-size: 150%;}
 
 .carousel_link{margin-bottom: 0.5%; }
+
+#im {
+	
+	margin-left: 40%;
+
+	margin-bottom: 2%;
+	border-radius:20px;
+
+	
+
+
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+}
+
+#titre{
+
+	text-align: center;
+}
+
+
+#block{
+
+
+margin-top: 2%;
+	margin-bottom: 3%;
+}

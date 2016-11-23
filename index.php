@@ -87,11 +87,11 @@
     </nav>
 
     <!--Logo-->
-    <div class="">
-        <img src="img/unicef.png">
-    </div>
 
-    <h1>Bienvenue sur le site d'UNICEF Campus Paris</h1>
+        <img src="img/unicef.png" id="im" >
+    
+
+    <h1 id="titre">Bienvenue sur le site d'UNICEF Campus Paris</h1>
 
     <!--Carousel des articles-->
     <div class="container-fluid">
@@ -155,8 +155,8 @@
         </div>
     </div>
 
-    <div class="col-md-12" style="">
-        <div id="bloc" class="col-md-6">
+    <div id="block" class="col-md-12" style="">
+        <div id="block" class="col-md-6">
             <h3>Les missions des étudiants UNICEF Campus</h3>
             <p>- Représenter UNICEF  dans son entourage et fais connaître ses missions.</p>
             <p>- Créer des antennes Campus au sein des établissements d'enseignement supérieur.</p>
@@ -165,7 +165,7 @@
             <p>- Veiller à la pérénnité de l'antenne au sein des facs et écoles.</p>
             <p>- Intégrer une communauté de jeunes engagés pour porter la voix des enfants et des jeunes en France et dans le monde.</p>
         </div>
-        <div class="col-md-6">
+        <div id="block" class="col-md-6">
             <h3>Les actions des étudiants UNICEF Campus</h3>
             <p>- Organiser des évènements scolaires : expositions, conférences, colloques, concerts, spectacles, afterworks, tables rondes sur les enjeux de l'enfance en France, la situation des enfants dans le monde, les enjeux du développement, la place des jeunes dans la société...</p>
             <p>- Mener des animations de de sensibilisation sur les droits de l'enfant dans les collèges et lycées.</p>

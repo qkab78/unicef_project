@@ -170,10 +170,19 @@
               
           </div>
           <div class="col-md-3">
-              <h4>Restons en contact !</h4>
-              <p>FB</p>
-              <p>Twitter</p>
-              <p>Youtube</p>
+            <h4>Restons en contact !</h4>
+            <p>
+                <i id="iconCustom" class="fa fa-facebook-official" aria-hidden="trfa fa-facebook-officialue"></i>
+                <a href="https://www.facebook.com/UNICEF.France/?fref=ts">UNICEF France</a>
+            </p>
+            <p>
+                <i id="iconCustom" class="fa fa-twitter-square" aria-hidden="true"></i>
+                <a href="https://twitter.com/UNICEF_france">UNICEF France</a>
+            </p>
+            <p>
+                <i id="iconCustom" class="fa fa-youtube" aria-hidden="true"></i>
+                <a href="https://www.youtube.com/user/uniceffrance">UNICEF France</a>
+            </p>
           </div>
           <div class="col-md-4">
               <h4>Inscrivez-vous à notre newsletter !</h4>

@@ -186,11 +186,12 @@
           </div>
           <div class="col-md-4">
               <h4>Inscrivez-vous à notre newsletter !</h4>
-              <form>
+              <form action="#" method="post">
                   <label>Prénom</label>
                   <input class="form-control" type="text" name="firstname"><br>
                   <label>Nom</label>
                   <input class="form-control" type="text" name="lastname">
+                  <input class="btn btn-default" type="submit" name="submit" value="Informez-moi">
               </form>
           </div>
       </div>

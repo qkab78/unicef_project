@@ -108,18 +108,38 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img src="img/unicef.png" alt="Chania">
+                    <div class="carousel-caption">
+                        <h3>Article 1</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
+                    </div>
                 </div>
 
                 <div class="item">
-                  <img src="img/unicef.png" alt="Chania">
+                    <img src="img/unicef.png" alt="Chania">
+                    <div class="carousel-caption">
+                        <h3>Article 2</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
+                    </div>
                 </div>
 
                 <div class="item">
                     <img src="img/unicef.png" alt="Flower">
+                    <div class="carousel-caption">
+                        <h3>Article 3</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
+                    </div>
                 </div>
 
                 <div class="item">
                     <img src="img/unicef.png" alt="Flower">
+                    <div class="carousel-caption">
+                        <h3>Article 4</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
+                    </div>
                 </div>
             </div>
 
@@ -157,18 +177,18 @@
 
     <footer>
       <div class="col-md-12">
-          <div class="col-md-4">
+        <div class="col-md-4">
             <h4>
                 En savoir plus sur l'UNICEF ?<br>
                 <a href="#">Cliquez ici</a>
             </h4>
               
-                <h4>
-                    En savoir plus sur le Comité de Paris ?<br>
-                    <a href="#">Cliquez ici</a>
-                </h4>
+            <h4>
+                En savoir plus sur le Comité de Paris ?<br>
+                <a href="#">Cliquez ici</a>
+            </h4>
               
-          </div>
+        </div>
           <div class="col-md-3">
             <h4>Restons en contact !</h4>
             <p>

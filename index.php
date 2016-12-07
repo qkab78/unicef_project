@@ -39,7 +39,6 @@
     <!-- Theme Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Modernizr Js -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -72,7 +71,6 @@
             <li><a href="#">Calendrier</a></li>
             <li><a href="#">Antennes</a></li>
             <li><a href="#">Blog</a></li>
-
             <li>
                 <form action="" method="get">
                     <div class="form-group">
@@ -85,13 +83,8 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
     <!--Logo-->
-	
 
-
-        
-    
 
     <h1 id="titre"><a href="#">
           <span class="glyphicon glyphicon-grain"></span>
@@ -99,9 +92,6 @@
 		   <a href="#">
           <span class="glyphicon glyphicon-grain"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </a><img  id ="logo" src="assets/img/uniceflogo.png" ></h1>
-		
-		
-		
 
     <!--Carousel des articles-->
     <div class="container-fluid">
@@ -116,39 +106,34 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" id="carouselshadow" role="listbox">
-			
-                <div class="item active" >
+                <div class="item active">
                     <img id="carouseldiv" src="assets/img/unicefe.jpg" alt="Chania">
                     <div class="carousel-caption">
                         <h3 id="TitreArcticle">Article 1</h3>
-                        
                         <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
                     </div>
                 </div>
 
                 <div class="item">
-                    <img src="assets/img/unicef.png" alt="Chania">
+                    <img id="carouseldiv" src="assets/img/unicefe.jpg" alt="Chania">
                     <div class="carousel-caption">
-                        <h3>Article 2</h3>
-                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        <h3 id="TitreArcticle">Article 2</h3>
+                        <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
+                    </div>
+                </div>
+
+               <div class="item">
+                    <img id="carouseldiv" src="assets/img/unicefe.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <h3 id="TitreArcticle">Article 3</h3>
                         <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
                     </div>
                 </div>
 
                 <div class="item">
-                    <img src="assets/img/unicef.png" alt="Flower">
+                    <img id="carouseldiv" src="assets/img/unicefe.jpg" alt="Chania">
                     <div class="carousel-caption">
-                        <h3>Article 3</h3>
-                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-                        <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="assets/img/unicef.png" alt="Flower">
-                    <div class="carousel-caption">
-                        <h3>Article 4</h3>
-                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        <h3 id="TitreArcticle">Article 4</h3>
                         <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
                     </div>
                 </div>
@@ -229,28 +214,30 @@
 	</div>
     <!-- All JS Files -->
     <!-- JQuery v1.11.3-->
-    <script src="assetsjs/vendor/jquery-1.12.3.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.3.min.js"></script>
     <!-- Library - Bootstrap v3.3.5 -->
-    <script src="assetsjs/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <!-- Slider Revolution Plugin js -->
-    <script type="text/javascript" src="assetslib/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="assetslib/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="assetslib/rs-plugin/rs.home.js"></script>
+    <script type="text/javascript" src="assets/lib/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/lib/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/lib/rs-plugin/rs.home.js"></script>
     <!-- Library - OWL Carousel -->
-    <script src="assetsjs/owl.carousel.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <!-- Library - WOW Js -->
-    <script src="assetsjs/wow.js"></script>
+    <script src="assets/js/wow.js"></script>
     <!-- Library - Theme  Plugins js -->
-    <script src="assetsjs/plugins.js"></script>
+    <script src="assets/js/plugins.js"></script>
     <!-- Library - isotope js -->
-    <script src="assetsjs/jquery.isotope.js"></script>
+    <script src="assets/js/jquery.isotope.js"></script>
     <!-- Library - waypoints js -->
-    <script src="assetsjs/waypoints.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
     <script>
         new WOW().init();
     </script>
     <!-- Library - Theme JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </body>
 
 </html>

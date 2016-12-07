@@ -88,7 +88,7 @@
 
     <!--Logo-->
 
-        <img src="img/unicef.png" id="im" >
+        <img src="assets/img/unicef.png" id="im" >
     
 
     <h1 id="titre">Bienvenue sur le site d'UNICEF Campus Paris</h1>

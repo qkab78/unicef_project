@@ -1,0 +1,84 @@
+#bloc{border-right: 1px solid black;}
+#iconCustom{font-size: 150%;}
+
+.carousel_link{margin-bottom: 0.5%; }
+
+
+
+body{
+ 
+
+    background-image: url("blue.jpg") ;
+}
+
+#im {
+	
+	margin-left: 40%;
+	
+width: 300px;
+height: 200px;
+
+	margin-bottom: 2%;
+	border-radius:20px;
+
+	
+
+
+	box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+
+
+}
+
+#titre{
+
+	text-align: center;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+}
+
+
+#TitreArcticle{
+	
+	margin-bottom:20%;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+	font-size:40px;
+}
+
+#logo{
+	
+	width: 12%;
+height: 12%;
+margin-right:-17%;
+}
+
+footer{
+	
+	font-size:12px;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+}
+
+
+#carouselshadow{
+	
+	 opacity: 0.8;
+    filter: alpha(opacity=50);
+	transition-duration: 1s;
+	
+}
+
+#carouselshadow:hover{
+	
+	opacity: 1;
+}
+
+#carouseldiv{
+	border-radius: 20px;
+}
+
+
+
+#block{
+
+
+margin-top: 2%;
+	margin-bottom: 3%;
+}

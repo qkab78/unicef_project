@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="assets/css/shortcodes/shortcodes.css">
     <!-- Custom - Theme CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/csstest.css">
     <!-- Custom - Theme Color CSS -->
     <link rel="stylesheet" href="assets/css/color/color-one.css">
     <!-- Theme Responsive CSS -->
@@ -87,11 +87,21 @@
     </nav>
 
     <!--Logo-->
+	
 
-        <img src="assets/img/unicef.png" id="im" >
+
+        
     
 
-    <h1 id="titre">Bienvenue sur le site d'UNICEF Campus Paris</h1>
+    <h1 id="titre"><a href="#">
+          <span class="glyphicon glyphicon-grain"></span>
+        </a>Bienvenue sur le site d'UNICEF Campus Paris
+		   <a href="#">
+          <span class="glyphicon glyphicon-grain"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </a><img  id ="logo" src="assets/img/uniceflogo.png" ></h1>
+		
+		
+		
 
     <!--Carousel des articles-->
     <div class="container-fluid">
@@ -105,12 +115,13 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="assets/img/unicef.png" alt="Chania">
+            <div class="carousel-inner" id="carouselshadow" role="listbox">
+			
+                <div class="item active" >
+                    <img id="carouseldiv" src="assets/img/unicefe.jpg" alt="Chania">
                     <div class="carousel-caption">
-                        <h3>Article 1</h3>
-                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        <h3 id="TitreArcticle">Article 1</h3>
+                        
                         <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
                     </div>
                 </div>
@@ -176,22 +187,23 @@
     </div>
 
     <!--Footer-->
+	<div id="footermg">
     <footer>
       <div class="col-md-12">
         <div class="col-md-4">
-            <h4>
+            <h5>
                 En savoir plus sur l'UNICEF ?<br>
                 <a href="#">Cliquez ici</a>
-            </h4>
+            </h5>
               
-            <h4>
+            <h5>
                 En savoir plus sur le Comité de Paris ?<br>
                 <a href="#">Cliquez ici</a>
-            </h4>
+            </h5>
               
         </div>
           <div class="col-md-3">
-            <h4>Restons en contact !</h4>
+            <h5>Restons en contact !</h5>
             <p>
                 <i id="iconCustom" class="fa fa-facebook-official" aria-hidden="trfa fa-facebook-officialue"></i>
                 <a href="https://www.facebook.com/UNICEF.France/?fref=ts">UNICEF France</a>
@@ -206,17 +218,15 @@
             </p>
           </div>
           <div class="col-md-4">
-              <h4>Inscrivez-vous à notre newsletter !</h4>
-              <form action="#" method="post">
-                  <label>Prénom</label>
-                  <input class="form-control" type="text" name="firstname"><br>
-                  <label>Nom</label>
-                  <input class="form-control" type="text" name="lastname">
-                  <input class="btn btn-default" type="submit" name="submit" value="Informez-moi">
+              <h5>Inscrivez-vous à notre newsletter !
+              <form action="#" method="post"><br>
+
+                  <a href="#">Cliquez ici</a></h5>
               </form>
           </div>
       </div>
     </footer>
+	</div>
     <!-- All JS Files -->
     <!-- JQuery v1.11.3-->
     <script src="assetsjs/vendor/jquery-1.12.3.min.js"></script>

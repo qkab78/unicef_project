@@ -1,89 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Unicef | Ynov</title>
-    <meta name="description" content="corporate, general, portfolio, photography, blog, gallery, responsive">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.png">
-
-    <!-- Google Fonts Library -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100,400italic,700,900,100italic' rel='stylesheet' type='text/css'>
-
-    <!-- All CSS Files -->
-    <!-- Library - Bootstrap v3.3.6-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Library - OWL Carousel CSS-->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <!-- Library - Font Awesome CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <!-- Library - PE Icon 7 Stroke CSS  -->
-    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
-    <!-- Library - Animate CSS -->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Library - Venobox CSS -->
-    <link rel="stylesheet" href="assets/css/venobox.css">
-    <!-- Library - RS slider CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/lib/rs-plugin/css/settings.css" media="screen" />
-    <!-- Theme all shortcode elements style -->
-    <link rel="stylesheet" href="assets/css/shortcodes/shortcodes.css">
-    <!-- Custom - Theme CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/csstest.css">
-    <!-- Custom - Theme Color CSS -->
-    <link rel="stylesheet" href="assets/css/color/color-one.css">
-    <!-- Theme Responsive CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- Modernizr Js -->
-    <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 50%;
-      margin: auto;
-  }
-  </style>
-</head>
-
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Unicef | YnovCampus</title>
+        <?php require('views/head.php');?>
+    </head>
 <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="navbar-brand">
-            <a href="#">Unicef</a>
-            </div>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Calendrier</a></li>
-            <li><a href="#">Antennes</a></li>
-            <li><a href="#">Blog</a></li>
-            <li>
-                <form action="#" method="get">
-                    <div class="form-group">
-                        <input class="navbar-form navbar-left searchBarCustom" type="search" name="search">
-                        <input class="btn btn-default searchBarButtonCustom" type="submit" name="searchButton" value="Recherche">
-                    </div>
-                </form>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <!--Logo-->
+    <?php require('views/header.php');?>
 
 
     <h1 id="titre"><a href="#">
@@ -172,62 +96,7 @@
     </div>
 
     <hr>
-    <!--Footer-->   
-    <footer id="footermg" class="col-md-12">
-        <div id ="footercontent">
-            <div  class="col-md-4">
-                <h5>Contact</h5>
-                <i id="iconCustom" class="fa fa-envelope" aria-hidden="true">
-                    <span>adresse@mail.com</span>
-                </i>              
-            </div>
-
-            <div  class="col-md-4">
-                <h5>Adresse</h5>
-                <i id="iconCustom" class="fa fa-map-marker" aria-hidden="true">
-                    <span>179 Rue de Charonne</span>
-                </i>              
-            </div>
-
-            <div  class="col-md-4">
-                <h5>Restons en contact !</h5>
-                <i id="iconCustom" class="fa fa-facebook-official" aria-hidden="trfa fa-facebook-officialue"></i>
-                <a href="https://www.facebook.com/UNICEF.France/?fref=ts">UNICEF France</a>
-            
-                <i id="iconCustom" class="fa fa-twitter-square" aria-hidden="true"></i>
-                <a href="https://twitter.com/UNICEF_france">UNICEF France</a>
-                      
-                <i id="iconCustom" class="fa fa-youtube" aria-hidden="true"></i>
-                <a href="https://www.youtube.com/user/uniceffrance">UNICEF France</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- All JS Files -->
-    <!-- JQuery v1.11.3-->
-    <script src="assets/js/vendor/jquery-1.12.3.min.js"></script>
-    <!-- Library - Bootstrap v3.3.5 -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Slider Revolution Plugin js -->
-    <script type="text/javascript" src="assets/lib/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="assets/lib/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="assets/lib/rs-plugin/rs.home.js"></script>
-    <!-- Library - OWL Carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- Library - WOW Js -->
-    <script src="assets/js/wow.js"></script>
-    <!-- Library - Theme  Plugins js -->
-    <script src="assets/js/plugins.js"></script>
-    <!-- Library - isotope js -->
-    <script src="assets/js/jquery.isotope.js"></script>
-    <!-- Library - waypoints js -->
-    <script src="assets/js/waypoints.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <!-- Library - Theme JS -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
+    <?php require('views/footer.php');?>
+    <?php require('scripts/scripts.php');?>
 </body>
 </html>

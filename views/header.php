@@ -10,7 +10,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand">
-            <a href="#">Unicef</a>
+            <a href="index.php">Unicef</a>
             </div>
         </div>
 
@@ -20,7 +20,7 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Calendrier</a></li>
             <li><a href="antennes.php">Antennes</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="blogs.php">Blog</a></li>
             <li>
                 <form action="#" method="get">
                     <div class="form-group">

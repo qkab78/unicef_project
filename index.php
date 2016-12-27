@@ -72,10 +72,10 @@
             <li><a href="#">Antennes</a></li>
             <li><a href="#">Blog</a></li>
             <li>
-                <form action="" method="get">
+                <form action="#" method="get">
                     <div class="form-group">
-                        <input class="navbar-form navbar-left" type="search" name="search">
-                        <input class="btn btn-default" type="submit" name="searchButton" value="Recherche">
+                        <input class="navbar-form navbar-left searchBarCustom" type="search" name="search">
+                        <input class="btn btn-default searchBarButtonCustom" type="submit" name="searchButton" value="Recherche">
                     </div>
                 </form>
             </li>
@@ -91,7 +91,7 @@
         </a>Bienvenue sur le site d'UNICEF Campus Paris
 		   <a href="#">
           <span class="glyphicon glyphicon-grain"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </a><img  id ="logo" src="assets/img/uniceflogo.png" ></h1>
+        </a><img  id ="logo" src="assets/img/ynov_campus.png" ></h1>
 
     <!--Carousel des articles-->
     <div class="container-fluid">
@@ -151,7 +151,7 @@
         </div>
     </div>
 
-    <div id="block" class="col-md-12" style="">
+    <div id="block" class="col-md-12">
         <div id="block" class="col-md-6">
             <h3>Les missions des étudiants UNICEF Campus</h3>
             <p>- Représenter UNICEF  dans son entourage et fais connaître ses missions.</p>
@@ -171,47 +171,38 @@
         </div>
     </div>
 
-    <!--Footer-->
-	<div id="footermg">
-    <footer>
-      <div class="col-md-12">
-        <div class="col-md-4">
-            <h5>
-                En savoir plus sur l'UNICEF ?<br>
-                <a href="#">Cliquez ici</a>
-            </h5>
-              
-            <h5>
-                En savoir plus sur le Comité de Paris ?<br>
-                <a href="#">Cliquez ici</a>
-            </h5>
-              
-        </div>
-          <div class="col-md-3">
-            <h5>Restons en contact !</h5>
-            <p>
+    <hr>
+    <!--Footer-->   
+    <footer id="footermg" class="col-md-12">
+        <div id ="footercontent">
+            <div  class="col-md-4">
+                <h5>Contact</h5>
+                <i id="iconCustom" class="fa fa-envelope" aria-hidden="true">
+                    <span>adresse@mail.com</span>
+                </i>              
+            </div>
+
+            <div  class="col-md-4">
+                <h5>Adresse</h5>
+                <i id="iconCustom" class="fa fa-map-marker" aria-hidden="true">
+                    <span>179 Rue de Charonne</span>
+                </i>              
+            </div>
+
+            <div  class="col-md-4">
+                <h5>Restons en contact !</h5>
                 <i id="iconCustom" class="fa fa-facebook-official" aria-hidden="trfa fa-facebook-officialue"></i>
                 <a href="https://www.facebook.com/UNICEF.France/?fref=ts">UNICEF France</a>
-            </p>
-            <p>
+            
                 <i id="iconCustom" class="fa fa-twitter-square" aria-hidden="true"></i>
                 <a href="https://twitter.com/UNICEF_france">UNICEF France</a>
-            </p>
-            <p>
+                      
                 <i id="iconCustom" class="fa fa-youtube" aria-hidden="true"></i>
-                <a href="https://www.youtube.com/user/uniceffrance">UNICEF France</a>
-            </p>
-          </div>
-          <div class="col-md-4">
-              <h5>Inscrivez-vous à notre newsletter !
-              <form action="#" method="post"><br>
-
-                  <a href="#">Cliquez ici</a></h5>
-              </form>
-          </div>
-      </div>
+                <a href="https://www.youtube.com/user/uniceffrance">UNICEF France</a></p>
+            </div>
+        </div>
     </footer>
-	</div>
+
     <!-- All JS Files -->
     <!-- JQuery v1.11.3-->
     <script src="assets/js/vendor/jquery-1.12.3.min.js"></script>
@@ -239,5 +230,4 @@
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
 </body>
-
 </html>

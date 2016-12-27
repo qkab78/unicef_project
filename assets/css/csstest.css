@@ -4,11 +4,15 @@
 .carousel_link{margin-bottom: 0.5%; }
 
 
+html{
 
+	width: 100%;
+	height: 100%;
+}
 body{
  
 
-    background-image: url("blue.jpg") ;
+    background-image: url("../img/blue.jpg") ;
 }
 
 #im {
@@ -77,8 +81,28 @@ footer{
 
 
 #block{
-
-
-margin-top: 2%;
+	margin-top: 2%;
 	margin-bottom: 3%;
+}
+
+#footermg{
+	background-color: rgba(118,116,117,0.3);
+}
+
+
+
+
+
+
+
+#footercontent{
+	margin-top: 3%
+}
+
+.searchBarCustom{
+	margin-top: 5%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.searchBarButtonCustom{
+	margin-top: 4%;
 }

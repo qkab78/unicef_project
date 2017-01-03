@@ -1,8 +1,5 @@
 #bloc{border-right: 1px solid black;}
 #iconCustom{font-size: 150%;}
-
-.carousel_link{margin-bottom: 0.5%; }
-
 #im {
 	
 	margin-left: 40%;
@@ -29,3 +26,18 @@
 margin-top: 2%;
 	margin-bottom: 3%;
 }
+
+#calendar{
+	/*width: 100%;*/
+	border: 1px solid black;
+	margin-bottom: 10%;
+}
+
+#myCarousel{
+	/*width: 100%;*/
+	margin-bottom: 10%;
+
+}
+
+.carousel_link{margin-bottom: 0.5%; }
+.alignCenter{text-align: center;}

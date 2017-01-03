@@ -17,8 +17,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Calendrier</a></li>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="calendrier.php">Calendrier</a></li>
             <li><a href="antennes.php">Antennes</a></li>
             <li><a href="blogs.php">Blog</a></li>
             <li>

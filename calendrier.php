@@ -90,7 +90,7 @@
         <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/fullcalendar.js'></script>
         <!--<script type='text/javascript' src='assets/js/fullcalendar/fullcalendar.js'></script>-->
         <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/locale/fr.js'></script>
-        <!--<script type='text/javascript' src='assets/js/fullcalendar/gcal.js'></script>-->
+        <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/gcal.js'></script>
         <script type='text/javascript' src='functions/calendar/calendar.js'></script>
         <!--<script type='text/javascript' src='assets/js/calendar/fullcalendar.js'></script>
         <script type='text/javascript' src='assets/js/calendar/gcal.js'></script>-->

@@ -1,31 +1,31 @@
 <?php
-    	$bdd = mysqli_connect("localhost", "root", "root", "ydays_unicef");
-    		//On récupère les events
-    		$req_event = "SELECT * from event";
-    		$res_event = mysqli_query($bdd, $req_event);
-    		$data_event = mysqli_fetch_array($res_event);
-    		if ($data_event) {
-    			$title = $data_event['title'];
-    			$description = $data_event['description'];
-    			$date = $data_event['date'];
-    			$address = $data_event['address'];
-    			$team_photo = $data_event['team_photo'];
+    $event_id = $_GET["event_id"];
+    $bdd = mysqli_connect("localhost", "root", "root", "ydays_unicef");
+    //On récupère les events
+    $req_event = "SELECT * from event  WHERE event_id=".$event_id." ";
+    //$req_event = "SELECT * FROM users LEFT JOIN event ON users.user_is = event.manager_event_id";
+    $res_event = mysqli_query($bdd, $req_event);
+    $data_event = mysqli_fetch_array($res_event);
+    if ($data_event) {
+        $title = $data_event['title'];
+        $description = $data_event['description'];
+        $date = $data_event['date'];
+        $address = $data_event['address'];
+        $team_photo = $data_event['team_photo'];
+    }
 
-    		}
-
-    		//On récupère les users
-    		$req_user = "SELECT * from users where user_id='2'";
-    		$res_user = mysqli_query($bdd, $req_user);
-    		$data_user = mysqli_fetch_array($res_user);
-    		if ($data_user) {
-    			$lastname = $data_user['lastname'];
-    			$firstname = $data_user['firstname'];
-    			$email = $data_user['email'];
-    			$manager_photo = $data_user['manager_photo'];
-    			$phone_number = $data_user['phone_number'];
-
-    		}
-    		mysqli_close($bdd);
+    //On récupère les users
+    $req_user = "SELECT * from users where user_id='2'";
+    $res_user = mysqli_query($bdd, $req_user);
+    $data_user = mysqli_fetch_array($res_user);
+    if ($data_user) {
+        $lastname = $data_user['lastname'];
+        $firstname = $data_user['firstname'];
+        $email = $data_user['email'];
+        $manager_photo = $data_user['manager_photo'];
+        $phone_number = $data_user['phone_number'];
+    }
+    mysqli_close($bdd);
     ?>
 <!DOCTYPE html>
 <html>

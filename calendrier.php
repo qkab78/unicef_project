@@ -84,11 +84,14 @@
 		<hr>
 	    <?php require('views/footer.php');?>
 	    <?php require('scripts/scripts.php');?>
-        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-        <script type='text/javascript' src='assets/js/fullcalendar/fullcalendar.js'></script>
-        <script type='text/javascript' src='assets/js/fullcalendar/gcal.js'></script>
+        <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/lib/jquery.min.js'></script>
+        <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/lib/jquery-ui.min.js'></script>
+        <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/lib/moment.min.js'></script>
+        <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/fullcalendar.js'></script>
+        <!--<script type='text/javascript' src='assets/js/fullcalendar/fullcalendar.js'></script>-->
+        <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/locale/fr.js'></script>
+        <!--<script type='text/javascript' src='assets/js/fullcalendar/gcal.js'></script>-->
         <script type='text/javascript' src='functions/calendar/calendar.js'></script>
-	    <!--<script type='text/javascript' src='assets/js/calendar/moment.js'></script>-->
         <!--<script type='text/javascript' src='assets/js/calendar/fullcalendar.js'></script>
         <script type='text/javascript' src='assets/js/calendar/gcal.js'></script>-->
 	    <!--<script src="https://apis.google.com/js/api.js"></script>

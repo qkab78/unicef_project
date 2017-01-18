@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="assets/css/shortcodes/shortcodes.css">
 <!-- Custom - Theme CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style2.css">
 <link rel="stylesheet" href="assets/css/csstest.css">
 <!-- Custom - Theme Color CSS -->
 <link rel="stylesheet" href="assets/css/color/color-one.css">

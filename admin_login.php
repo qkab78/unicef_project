@@ -29,17 +29,19 @@
 
 <!--Carousel des articles-->
 <div class="container-fluid">
-    <form method="post" action="admin_login.php">
-        <div class="form-group">
-            <label for="email">Email :</label>
-            <input type="email" class="form-control" id="email" name="email">
-        </div>
-        <div class="form-group">
-            <label for="pwd">Mot de passe :</label>
-            <input type="password" class="form-control" id="password" name="password">
-        </div>
-        <button type="submit" class="btn btn-default">Valider</button>
-    </form>
+    <div id="adminLoginForm">
+        <form method="post" action="admin_login.php">
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Mot de passe :</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-default aligncenter margin-top-custom">Valider</button>
+        </form>
+    </div>
 </div>
 
 

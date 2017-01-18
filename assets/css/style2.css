@@ -38,5 +38,10 @@ margin-top: 2%;
 
 }
 
+#adminLoginForm{
+    border: 1px solid black;
+    margin-left: 25%;
+    border-radius: 20px;
+}
 .carousel_link{margin-bottom: 0.5%; }
 .alignCenter{text-align: center;}

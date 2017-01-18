@@ -1,6 +1,6 @@
 <!-- All JS Files -->
     <!-- JQuery v1.11.3-->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>-->
     <!-- Library - Bootstrap v3.3.5 -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Slider Revolution Plugin js -->

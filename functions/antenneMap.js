@@ -4,7 +4,7 @@ var marker;
 var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading"><?php echo $title?></h1>'+
+      '<h1 id="firstHeading" class="firstHeading">Ynov Campus</h1>'+
       '<div id="bodyContent">'+
       '<p><?php echo $description?>,'+
       '</div>'+
@@ -27,7 +27,7 @@ function initMap() {
     marker = new google.maps.Marker({
 	    position: myLatLng,
 	    map: map,
-	    title: '<?php echo $title?>',
+	    title: 'Ynov Campus',
 	    draggable: false,
 	    animation: google.maps.Animation.DROP,
 	    infoWindow: {

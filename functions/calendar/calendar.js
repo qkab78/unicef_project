@@ -1,9 +1,19 @@
 $(document).ready(function() {
-	$('#calendar').fullCalendar({
-	    googleCalendarApiKey: 'AIzaSyBq7C_-5mMDpO_HNJAuRwAszp42Yk73H3g',
-		events: {
-		    googleCalendarId: 'abcd1234@group.calendar.google.com'
-		},
-		height: 400
+    var initialLocaleCode = 'fr';
+    console.log("OK");
+    $('#calendar').fullCalendar({
+        /*header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay,listMonth'
+        },*/
+	    //googleCalendarApiKey: 'AIzaSyAtV-qbSndYZCl03IyvHA1EercbdJpyWU4',
+        height: 400,
+        locale: initialLocaleCode,
+        //googleCalendarId: 'akek0bfsjvqf08n187gelr1508@group.calendar.google.com'
+        events: {
+            googleCalendarId: 'akek0bfsjvqf08n187gelr1508@group.calendar.google.com',
+            googleCalendarApiKey: 'AIzaSyAtV-qbSndYZCl03IyvHA1EercbdJpyWU4'
+		}
     });
 });

@@ -1,3 +1,3 @@
 <?php
-	mail('q_bossdu78@hotmail.fr', 'Test', 'Je suis le test', 'From: test@test.com');
+	mail('qkabasele@gmail.com', 'Test', 'Je suis le test', 'From: test@test.com');
 ?>

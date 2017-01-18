@@ -64,7 +64,7 @@
 	                <div class="item">
 	                    <img id="carouseldiv" src="assets/img/unicefe.jpg" alt="Chania">
 	                    <div class="carousel-caption">
-	                        <h3 id="TitreArcticle">Even 4</h3>
+	                        <h3 id="TitreArcticle">Event 4</h3>
 	                        <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
 	                    </div>
 	                </div>
@@ -84,10 +84,13 @@
 		<hr>
 	    <?php require('views/footer.php');?>
 	    <?php require('scripts/scripts.php');?>
-	    <script type='text/javascript' src='assets/js/calendar/gcal.js'></script>
-	    <script type='text/javascript' src='assets/js/calendar/moment.js'></script>
-	    <script type='text/javascript' src='assets/js/calendar/fullcalendar.js'></script>
-	    <script type='text/javascript' src='functions/calendar/calendar.js'></script>
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type='text/javascript' src='assets/js/fullcalendar/fullcalendar.js'></script>
+        <script type='text/javascript' src='assets/js/fullcalendar/gcal.js'></script>
+        <script type='text/javascript' src='functions/calendar/calendar.js'></script>
+	    <!--<script type='text/javascript' src='assets/js/calendar/moment.js'></script>-->
+        <!--<script type='text/javascript' src='assets/js/calendar/fullcalendar.js'></script>
+        <script type='text/javascript' src='assets/js/calendar/gcal.js'></script>-->
 	    <!--<script src="https://apis.google.com/js/api.js"></script>
 		<script>
 		function start() {

@@ -5,8 +5,30 @@
  * Date: 18/01/2017
  * Time: 10:09
  */
+if (isset($_POST['submit'])){
+    //On récupère ce qu'on a tapé
+    $password = $_POST['password'];
+    $username = $_POST['username'];
 
-
+    //On récupère les events
+    $bdd = mysqli_connect("localhost", "root", "root", "ydays_unicef");
+    $req_admin = "SELECT * from admin";
+    $res_admin = mysqli_query($bdd, $req_admin);
+    $data = mysqli_fetch_array($res_admin);
+    if ($data) {
+        if ($password != $data['admin_password']){
+            echo "Erreur ! Vos identifiants sont faux !";
+        }else{
+            session_start();
+            $_SESSION['admin'] = true;
+            print_r("Admin connecté !");
+            header("Location: http://localhost/Unicef_project/admin_view.php");
+        }
+    }else{
+        echo "Erreur: ".$req_admin.'<br>'.mysqli_error($bdd);
+    }
+    mysqli_close($bdd);
+}
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="">
@@ -29,19 +51,17 @@
 
 <!--Carousel des articles-->
 <div class="container-fluid">
-    <div id="adminLoginForm">
-        <form method="post" action="admin_login.php">
-            <div class="form-group">
-                <label for="email">Email :</label>
-                <input type="email" class="form-control" id="email" name="email">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Mot de passe :</label>
-                <input type="password" class="form-control" id="password" name="password">
-            </div>
-            <button type="submit" class="btn btn-default aligncenter margin-top-custom">Valider</button>
-        </form>
-    </div>
+    <form method="post" action="admin_login.php">
+        <div class="form-group">
+            <label for="email">Pseudo :</label>
+            <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Mot de passe :</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" name="submit" class="btn btn-default aligncenter margin-top-custom">Valider</button>
+    </form>
 </div>
 
 

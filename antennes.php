@@ -1,31 +1,27 @@
 <?php
-    $event_id = $_GET["event_id"];
+    require_once("scripts/session.php");
     $bdd = mysqli_connect("localhost", "root", "root", "ydays_unicef");
-    //On récupère les events
-    $req_event = "SELECT * from event  WHERE event_id=".$event_id." ";
-    //$req_event = "SELECT * FROM users LEFT JOIN event ON users.user_is = event.manager_event_id";
-    $res_event = mysqli_query($bdd, $req_event);
-    $data_event = mysqli_fetch_array($res_event);
-    if ($data_event) {
-        $title = $data_event['title'];
-        $description = $data_event['description'];
-        $date = $data_event['date'];
-        $address = $data_event['address'];
-        $team_photo = $data_event['team_photo'];
+    if ($bdd){
+        //On récupère les events
+        $req_office = "SELECT * from users_office";
+        $res_office = mysqli_query($bdd, $req_office);
+        $data_office = mysqli_fetch_array($res_office);
+        if ($data_office) {
+            $lastname = $data_office['lastname'];
+            $firstname = $data_office['firstname'];
+            $title = $data_office['office_name'];
+            $description = $data_office['office_description'];
+            $address = $data_office['address'];
+            $team_photo = $data_office['team_photo'];
+            $user_photo = $data_office['user_photo'];
+            $email = $data_office['email'];
+            $phone_number = $data_office['phone_number'];
+        }
+        mysqli_close($bdd);
+    }else{
+        print_r("Error");
+        echo "Erreur: ".mysqli_error($bdd)."";
     }
-
-    //On récupère les users
-    $req_user = "SELECT * from users where user_id='2'";
-    $res_user = mysqli_query($bdd, $req_user);
-    $data_user = mysqli_fetch_array($res_user);
-    if ($data_user) {
-        $lastname = $data_user['lastname'];
-        $firstname = $data_user['firstname'];
-        $email = $data_user['email'];
-        $manager_photo = $data_user['manager_photo'];
-        $phone_number = $data_user['phone_number'];
-    }
-    mysqli_close($bdd);
     ?>
 <!DOCTYPE html>
 <html>
@@ -51,7 +47,7 @@
 					Descriptif: <?php echo $description;?>
 				</p>
 				<div class="col-md-12" style="border: 1px solid black;">
-					<div class="col-md-6"><img src="<?php echo $manager_photo;?>" alt="Photo du responsable"></div>
+					<div class="col-md-6"><img src="<?php echo $user_photo;?>" alt="Photo du responsable"></div>
 					
 					<div class="col-md-6">
 						<h3><?php echo " ".$lastname." ".$firstname." ";?></h3>

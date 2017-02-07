@@ -1,4 +1,26 @@
 <?php require_once("scripts/session.php");?>
+<?php
+    $selected_id = $_GET['selected_id'];
+    $blog_array = [];
+    require_once("scripts/bdd.php");
+    if ($bdd){
+        $query = "SELECT * from event";
+        $result = mysqli_query($bdd, $query);
+        for ($i=0; $i <= sizeof($blog_array); $i++){
+            if ($data = mysqli_fetch_array($result)){
+                $blog_array[$i]['event_id'] = $data['event_id'];
+                $blog_array[$i]['event_name'] = $data['event_name'];
+                $blog_array[$i]['event_photo'] = $data["event_photo"];
+                $blog_array[$i]['event_description'] = $data["event_description"];
+                $blog_array[$i]['event_date'] = $data["event_date"];
+            }
+        }
+        mysqli_close($bdd);
+    }else{
+        print_r("Error");
+        echo "Erreur: ".mysqli_error($bdd)."";
+    }
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -22,25 +44,24 @@
 	            </ol>
 
                 <?php
-                require_once("scripts/bdd.php");
-                $query = "SELECT * from event";
-                $result = mysqli_query($bdd, $query);
-                while ($data = mysqli_fetch_array($result)){
+                for ($i=0; $i < sizeof($blog_array); $i++){
                 ?>
-                <div class="container-fluid">
+                <div id="blogs" class="container-fluid">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="<?php echo $data["event_id"];?>" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="<?php echo $blog_array[$i]['event_id'];?>" class="active"></li>
                         </ol>
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" id="carouselshadow" role="listbox">
                             <div class="item active">
-                                <img id="carouseldiv" src="<?php echo $data["event_photo"];?>" alt="Chania">
+                                <img id="carouseldiv" src="<?php echo $blog_array[$i]['event_photo'];?>" alt="Chania">
                                 <div class="carousel-caption">
-                                    <h3 id="TitreArcticle"><?php echo $data["event_name"];?></h3>
-                                    <a class="btn btn-default carousel_link" href="#">En savoir plus</a>
+                                    <h3 id="TitreArcticle"><?php echo $blog_array[$i]['event_name'];?></h3>
+                                    <a id="blog" class="btn btn-default carousel_link" href="blogs.php?selected_id=<?php echo $i;?>">
+                                        En savoir plus
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -54,11 +75,38 @@
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
-
                     </div>
-                    <?php } mysqli_close($bdd); ?>
+                    <?php } ?>
                 </div>
 	        </div>
+
+            <div id="blogDetails">
+                <h2 id="title" class="titleAntenne">
+                    <?php
+                    echo $blog_array[$selected_id]['event_name'];
+                    ?>
+                </h2>
+
+
+                <div class="antenneandequipe">
+                    <div class="equipe">
+                        <h2>Photo de l'équipe</h2>
+                        <img src="<?php echo $blog_array[$selected_id]['event_photo'];?>" alt="event_photo">
+                    </div>
+
+                    <div class="antenne">
+
+                        <div class="col-md-12">
+                            <ul>
+                                <h3>Description: </h3>
+                                <li><?php echo $blog_array[$selected_id]['event_description'];?></li>
+                                <h3>Date : <?php echo $blog_array[$selected_id]['event_date'];?></h3>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 	    </div>
 	    
 		<hr>

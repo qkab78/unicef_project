@@ -20,7 +20,7 @@
             <li><a href="index.php">Accueil</a></li>
             <li><a href="calendrier.php">Calendrier</a></li>
             <li><a href="antennes.php?select_id=1">Antennes</a></li>
-            <li><a href="blogs.php">Blog</a></li>
+            <li><a href="blogs.php?selected_id=0">Blog</a></li>
             <li>
                 <form action="#" method="get">
                     <div class="form-group">

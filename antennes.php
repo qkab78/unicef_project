@@ -97,7 +97,6 @@ if ($bdd){
 			</div>
 		</div>
 
-        <div id="ajaxTest"></div>
 
 	    <?php require('views/footer.php');?>
 	    <?php require('scripts/scripts.php');?>

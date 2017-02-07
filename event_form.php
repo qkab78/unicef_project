@@ -6,7 +6,7 @@
  * Time: 23:45
  */
 session_start();
-$bdd = mysqli_connect("localhost", "root", "root", "ydays_unicef");
+require "scripts/bdd.php";
 if ($bdd){
     if (isset($_POST['submit'])){
         //On récupère ce qu'on a tapé

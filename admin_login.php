@@ -16,7 +16,7 @@ if (isset($_POST['submit'])){
     $res_admin = mysqli_query($bdd, $req_admin);
     $data = mysqli_fetch_array($res_admin);
     if ($data) {
-        if ($password != $data['admin_password']){
+        if (($username != $data['admin_username']) || ($password != $data['admin_password'])){
             echo "Erreur ! Vos identifiants sont faux !";
         }else{
             session_start();

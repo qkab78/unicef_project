@@ -19,7 +19,7 @@
           <ul class="nav navbar-nav">
             <li><a href="index.php">Accueil</a></li>
             <li><a href="calendrier.php">Calendrier</a></li>
-            <li><a href="antennes.php">Antennes</a></li>
+            <li><a href="antennes.php?select_id=1">Antennes</a></li>
             <li><a href="blogs.php">Blog</a></li>
             <li>
                 <form action="#" method="get">

@@ -1,0 +1,237 @@
+#bloc{border-right: 1px solid black;}
+#iconCustom{font-size: 150%;}
+
+.carousel_link{margin-bottom: 0.5%; }
+
+
+html{
+
+    width: 100%;
+    height: 100%;
+}
+body{
+
+
+    background-image: url("../img/blue.jpg") ;
+}
+
+#im {
+
+    margin-left: 40%;
+
+    width: 300px;
+    height: 200px;
+
+    margin-bottom: 2%;
+    border-radius:20px;
+
+
+
+
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+
+
+}
+
+#titre{
+
+    text-align: center;
+    text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+}
+
+
+#TitreArcticle{
+
+    margin-bottom:20%;
+    text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+    font-size:40px;
+}
+
+#logo{
+
+    width: 12%;
+    height: 12%;
+    margin-right:-17%;
+}
+
+footer{
+
+    font-size:12px;
+    text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+}
+
+
+#carouselshadow{
+
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+    transition-duration: 1s;
+
+}
+
+#carouselshadow:hover{
+
+    opacity: 1;
+}
+
+#carouseldiv{
+    border-radius: 20px;
+}
+
+
+
+#block{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#footermg{
+    background-color: rgba(118,116,117,0.3);
+}
+
+
+.col-md-6{
+
+    margin-bottom:2%;
+
+}
+
+
+
+.antenneandequipe{
+
+    margin-left:2%;
+
+    margin-right:2%;
+
+
+    margin-bottom:2%;
+    margin-top:2%;
+
+}
+
+
+.equipe{
+    background: #81DAF5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #81DAF5, #CEF6F5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #81DAF5, #CEF6F5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #81DAF5, #CEF6F5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #81DAF5, #CEF6F5); /* Standard syntax */
+    text-align:center;
+
+    border-radius:20px;
+    width:45%;
+
+
+    float: left;
+
+    margin-bottom:2%;
+    margin-top:2%;
+
+    height:40%;
+
+    float:right;
+    display: inline-block;
+
+    transition-duration: 1s;
+
+}
+
+.equipe:hover{
+    box-shadow: 1px 10px  50px black;
+
+}
+
+
+
+
+
+
+.antenne {
+
+    background: #81DAF5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #81DAF5, #CEF6F5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #81DAF5, #CEF6F5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #81DAF5, #CEF6F5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #81DAF5, #CEF6F5); /* Standard syntax */
+    text-align:center;
+
+    border-radius:20px;
+    width:40%;
+    height:50%;
+
+
+    margin-bottom:2%;
+    margin-top:2%;
+
+
+    width:35%;
+
+    /* float:left; */
+    display:inline-block;
+    margin-bottom:5px;
+
+
+    transition-duration: 1s;
+}
+
+
+.antenne:hover{
+
+    box-shadow: 1px 10px  50px black;
+}
+
+
+
+
+
+@media screen and (max-width: 692px)   {
+    .equipe, .antenne{
+        width:100%;
+        float:none;
+    }
+
+}
+
+
+#antenneMap {
+    height: 40%;
+    width:80%;
+    margin-left:10%;
+    margin-bottom:4%;
+
+    box-shadow: 1px 10px  50px black;
+
+}
+
+
+
+
+
+
+
+#footercontent{
+    margin-top: 3%
+}
+
+.searchBarCustom{
+    margin-top: 5%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.searchBarButtonCustom{
+    margin-top: 4%;
+}
+
+.imgAntenne{
+    width: 25%;
+    height: 25%;
+}
+
+.titleAndDescription{
+    text-align: center;
+}
+
+.titleAntenne{
+    text-align: center;
+    margin-top: 2%;
+}

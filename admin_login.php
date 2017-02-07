@@ -11,7 +11,7 @@ if (isset($_POST['submit'])){
     $username = $_POST['username'];
 
     //On récupère les events
-    $bdd = mysqli_connect("localhost", "root", "root", "ydays_unicef");
+    $bdd = mysqli_connect("localhost", "root", "", "ydays_unicef");
     $req_admin = "SELECT * from admin";
     $res_admin = mysqli_query($bdd, $req_admin);
     $data = mysqli_fetch_array($res_admin);

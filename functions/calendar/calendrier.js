@@ -1,15 +1,17 @@
+/**
+ * Created by Quentin on 14/02/2017.
+ */
 $(document).ready(function()
 {
-    alert("Full calendar fonvtionne !");
     $('#calendar').fullCalendar({
         header: {
-            left: 'prev,next today',
-            center: 'title'
+            left: 'title',
+            center: ''
         },
-        height: 400,
+        height: 300,
         events: {
             googleCalendarId: 'akek0bfsjvqf08n187gelr1508@group.calendar.google.com',
             googleCalendarApiKey: 'AIzaSyAtV-qbSndYZCl03IyvHA1EercbdJpyWU4'
-		}
+        }
     });
 });

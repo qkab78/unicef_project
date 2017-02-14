@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<?php require('views/header.php');?>
-		<div id="calendar"></div>
+		<div id="calendar" class="calendrierCSS"></div>
         <!--Carousel des articles-->
         <div class="container-fluid">
             <h2 class="alignCenter">Evénements précédents</h2>
@@ -74,7 +74,7 @@
         <!--<script type='text/javascript' src='assets/js/fullcalendar/fullcalendar.js'></script>-->
         <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/locale/fr.js'></script>
         <script type='text/javascript' src='assets/js/fullcalendar-3.1.0/gcal.js'></script>
-        <script type='text/javascript' src='functions/calendar/calendar.js'></script>
+        <script type='text/javascript' src='functions/calendar/calendrier.js'></script>
 
 	</body>
 </html>

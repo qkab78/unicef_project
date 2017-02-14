@@ -26,7 +26,7 @@ VALUES ('$lastname', '$firstname', '$title', '$description', '$address', '$team_
        $res_office = mysqli_query($bdd, $req_office);
        if ($res_office) {
             print_r("Données envoyées !");
-            header("Location: http://localhost/Unicef_project/antennes.php");
+            header("Location: http://localhost/Unicef_project/antenne_form.php");
        }else{
            echo "Erreur dans l'envoie des données !";
        }

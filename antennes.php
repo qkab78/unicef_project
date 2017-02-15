@@ -52,7 +52,7 @@ if ($bdd){
 	<body>
 		<?php require('views/header.php');?>
         <select name="users_office" id="users_office" onchange="change_value()">
-            <option value="">Selectionner une personne :</option>
+            <option value="">Selectionner un responsable :</option>
             <?php
             $selectID = $_GET['select_id'];
             for ($i=0; $i <= sizeof($office_array[$i]); $i++){

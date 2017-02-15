@@ -14,7 +14,6 @@
             $events_array[$i]['event_date'] = $data["event_date"];
         }
     }
-    echo json_encode($events_array);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="">
@@ -66,7 +65,7 @@
                             <a class="btn btn-default carousel_link" href="blogs.php?selected_id=<?php echo $events_array[$i]['event_id'];?>">En savoir plus</a>
                         </div>
                     </div>
-                    <?php } ?>
+                    <?php }mysqli_close($bdd); ?>
                 </div>
 
 

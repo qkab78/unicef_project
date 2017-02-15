@@ -33,7 +33,7 @@ if ($_SESSION['admin'] == false){
     <div class="container-fluid">
         <div>
             <a class="btn btn-default" href="antenne_form.php">Ajouter une antenne</a>
-            <a class="btn btn-default" href="event_form.php">Ajouter une événement</a>
+            <a class="btn btn-default" href="event_form.php">Ajouter un événement</a>
             <a class="btn btn-default" href="scripts/logout.php">Se déconnecter</a>
         </div>
     </div>

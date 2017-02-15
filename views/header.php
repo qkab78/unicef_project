@@ -21,14 +21,17 @@
             <li><a href="calendrier.php">Calendrier</a></li>
             <li><a href="antennes.php?select_id=1">Antennes</a></li>
             <li><a href="blogs.php?selected_id=1">Blog</a></li>
-            <li>
+            <?php if (isset($_SESSION['admin'])){?>
+              <li><a href="admin_view.php">Admin</a></li>
+            <?php }?>
+            <!--<li>
                 <form action="#" method="get">
                     <div class="form-group">
                         <input class="navbar-form navbar-left searchBarCustom" type="search" name="search">
                         <input class="btn btn-default searchBarButtonCustom" type="submit" name="searchButton" value="Recherche">
                     </div>
                 </form>
-            </li>
+            </li>-->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

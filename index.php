@@ -1,6 +1,20 @@
 <?php
-    require_once("scripts/bdd.php");
     require "scripts/session.php";
+    $events_array = [];
+    require_once("scripts/bdd.php");
+
+    $query = "SELECT * from event";
+    $result = mysqli_query($bdd, $query);
+    for ($i=0; $i <= sizeof($events_array); $i++) {
+        if ($data = mysqli_fetch_array($result)) {
+            $events_array[$i]['event_id'] = $data['event_id'];
+            $events_array[$i]['event_name'] = $data['event_name'];
+            $events_array[$i]['event_photo'] = $data["event_photo"];
+            $events_array[$i]['event_description'] = $data["event_description"];
+            $events_array[$i]['event_date'] = $data["event_date"];
+        }
+    }
+    echo json_encode($events_array);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="">
@@ -22,28 +36,39 @@
             </a><img  id ="logo" src="assets/img/ynov_campus.png" ></h1>
 
         <!--Carousel des articles-->
-        <?php
-            $query = "SELECT * from event";
-            $result = mysqli_query($bdd, $query);
-            while ($data = mysqli_fetch_array($result)){
-        ?>
         <div class="container-fluid">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="<?php echo $data["event_id"];?>" class="active"></li>
+                    <?php
+                        $query = "SELECT * from event";
+                        $result = mysqli_query($bdd, $query);
+                        for ($i=0; $i < sizeof($events_array); $i++) {
+                    ?>
+                    <li data-target="#myCarousel" data-slide-to="<?php echo $events_array[$i]["event_id"];?>" class="active"></li>
+                    <?php } ?>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" id="carouselshadow" role="listbox">
                     <div class="item active">
-                        <img id="carouseldiv" src="<?php echo $data["event_photo"];?>" alt="Chania">
+                        <img id="carouseldiv" src="<?php echo $events_array[0]["event_photo"];?>" alt="Chania">
                         <div class="carousel-caption">
-                            <h3 id="TitreArcticle"><?php echo $data["event_name"];?></h3>
-                            <a class="btn btn-default carousel_link" href="antennes.php">En savoir plus</a>
+                            <h3 id="TitreArcticle"><?php echo $events_array[0]["event_name"];?></h3>
+                            <a class="btn btn-default carousel_link" href="blogs.php?selected_id=<?php echo $events_array[0]['event_id'];?>">En savoir plus</a>
                         </div>
                     </div>
+                    <?php for ($i=1; $i < sizeof($events_array); $i++) { ?>
+                    <div class="item">
+                        <img id="carouseldiv" src="<?php echo $events_array[$i]["event_photo"];?>" alt="Chania">
+                        <div class="carousel-caption">
+                            <h3 id="TitreArcticle"><?php echo $events_array[$i]["event_name"];?></h3>
+                            <a class="btn btn-default carousel_link" href="blogs.php?selected_id=<?php echo $events_array[$i]['event_id'];?>">En savoir plus</a>
+                        </div>
+                    </div>
+                    <?php } ?>
                 </div>
+
 
                 <!-- Left and right controls -->
                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -56,7 +81,6 @@
                 </a>
 
             </div>
-            <?php } mysqli_close($bdd); ?>
         </div>
 
         <div id="block" class="col-md-12">
@@ -82,5 +106,16 @@
         <hr>
         <?php require('views/footer.php');?>
         <?php require('scripts/scripts.php');?>
+    <script>
+        $(document).ready(function () {
+            $('#myCarousel').on('slide.bs.carousel', function (e) {
+                var active = $(e.target).find('.carousel-inner > .item.active');
+                var from = active.index();
+                var next = $(e.relatedTarget);
+                var to = next.index();
+                console.log(from + ' => ' + to);
+            })
+        })
+    </script>
     </body>
 </html>

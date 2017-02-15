@@ -36,34 +36,40 @@
 	    	<h2 class="alignCenter">Evénements précédents</h2>
 	        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	            <!-- Indicators -->
-	            <ol class="carousel-indicators">
-	                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	                <li data-target="#myCarousel" data-slide-to="1"></li>
-	                <li data-target="#myCarousel" data-slide-to="2"></li>
-	                <li data-target="#myCarousel" data-slide-to="3"></li>
-	            </ol>
 
-                <?php
-                for ($i=0; $i < sizeof($blog_array); $i++){
-                ?>
+
                 <div id="blogs" class="container-fluid">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
+                            <?php
+                            for ($i=0; $i < sizeof($blog_array); $i++){
+                            ?>
                             <li data-target="#myCarousel" data-slide-to="<?php echo $blog_array[$i]['event_id'];?>" class="active"></li>
+                            <?php } ?>
                         </ol>
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" id="carouselshadow" role="listbox">
                             <div class="item active">
-                                <img id="carouseldiv" src="<?php echo $blog_array[$i]['event_photo'];?>" alt="Chania">
+                                <img id="carouseldiv" src="<?php echo $blog_array[0]['event_photo'];?>" alt="Chania">
                                 <div class="carousel-caption">
-                                    <h3 id="TitreArcticle"><?php echo $blog_array[$i]['event_name'];?></h3>
-                                    <a id="blog" class="btn btn-default carousel_link" href="blogs.php?selected_id=<?php echo $i;?>">
+                                    <h3 id="TitreArcticle"><?php echo $blog_array[0]['event_name'];?></h3>
+                                    <a id="blog" class="btn btn-default carousel_link" href="blogs.php?selected_id=<?php echo $blog_array[0]['event_id'];?>">
                                         En savoir plus
                                     </a>
                                 </div>
                             </div>
+
+                            <?php for ($i=1; $i < sizeof($blog_array); $i++) { ?>
+                                <div class="item">
+                                    <img id="carouseldiv" src="<?php echo $blog_array[$i]["event_photo"];?>" alt="Chania">
+                                    <div class="carousel-caption">
+                                        <h3 id="TitreArcticle"><?php echo $blog_array[$i]["event_name"];?></h3>
+                                        <a class="btn btn-default carousel_link" href="blogs.php?selected_id=<?php echo $blog_array[$i]['event_id'];?>">En savoir plus</a>
+                                    </div>
+                                </div>
+                            <?php } ?>
                         </div>
 
                         <!-- Left and right controls -->
@@ -76,14 +82,13 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <?php } ?>
                 </div>
 	        </div>
 
             <div id="blogDetails">
                 <h2 id="title" class="titleAntenne">
                     <?php
-                    echo $blog_array[$selected_id]['event_name'];
+                    echo $blog_array[$selected_id - 1]['event_name'];
                     ?>
                 </h2>
 
@@ -91,7 +96,7 @@
                 <div class="antenneandequipe">
                     <div class="equipe">
                         <h2>Photo de l'équipe</h2>
-                        <img src="<?php echo $blog_array[$selected_id]['event_photo'];?>" alt="event_photo">
+                        <img src="<?php echo $blog_array[$selected_id - 1]['event_photo'];?>" alt="event_photo">
                     </div>
 
                     <div class="antenne">
@@ -99,8 +104,8 @@
                         <div class="col-md-12">
                             <ul>
                                 <h3>Description: </h3>
-                                <li><?php echo $blog_array[$selected_id]['event_description'];?></li>
-                                <h3>Date : <?php echo $blog_array[$selected_id]['event_date'];?></h3>
+                                <li><?php echo $blog_array[$selected_id - 1]['event_description'];?></li>
+                                <h3>Date : <?php echo $blog_array[$selected_id - 1]['event_date'];?></h3>
                             </ul>
                         </div>
                     </div>

@@ -20,7 +20,7 @@ if ($bdd){
         $res_office = mysqli_query($bdd, $req_office);
         if ($res_office) {
             print_r("Données envoyées !");
-            header("Location: http://localhost/Unicef_project/blogs.php");
+            header("Location: http://localhost/Unicef_project/blogs.php?selected_id=1");
         }else{
             echo "Erreur dans l'envoie des données !";
         }

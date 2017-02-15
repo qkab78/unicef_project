@@ -1,10 +1,14 @@
 <?php
+session_start();
 /**
  * Created by PhpStorm.
  * User: Quentin
  * Date: 18/01/2017
  * Time: 10:09
  */
+if (isset($_SESSION['admin'])){
+    header("Location: http://localhost/Unicef_project/admin_view.php");
+}
 if (isset($_POST['submit'])){
     //On récupère ce qu'on a tapé
     $password = $_POST['password'];

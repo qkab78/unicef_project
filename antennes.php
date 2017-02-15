@@ -32,6 +32,7 @@ if ($bdd){
         }
     }
     mysqli_close($bdd);
+    //echo json_encode($office_array);
 }else{
     print_r("Error");
     echo "Erreur: ".mysqli_error($bdd)."";
@@ -55,16 +56,15 @@ if ($bdd){
             <option value="">Selectionner un responsable :</option>
             <?php
             $selectID = $_GET['select_id'];
-            for ($i=0; $i <= sizeof($office_array[$i]); $i++){
-                $office_array['office_id'] = $i;
+            for ($i=0; $i <= count($office_array) - 1; $i++){
+                //$office_array['office_id'] = $i;
+                //echo "index: ".$i;
                 ?>
                 <option value="<?php echo $office_array[$i]['office_id'];?>"><?php echo $office_array[$i]['lastname']." ".$office_array[$i]['firstname'];?></option>
             <?php } ?>
         </select>
         <h2 id="title" class="titleAntenne">
-            <?php
-                echo $office_array[$selectID - 1]['title'];
-            ?>
+            <?php echo $office_array[$selectID - 1]['title'];?>
         </h2>
 		<div id="antenneMap"></div>
 
@@ -92,6 +92,8 @@ if ($bdd){
                         <h3>Coordonées: </h3>
                         <li>email: <?php echo $office_array[$selectID - 1]['email'];?></li>
                         <li>tel: <?php echo $office_array[$selectID - 1]['phone_number']?></li>
+                        <li><i id="iconCustom" class="fa fa-facebook-official" aria-hidden="trfa fa-facebook-officialue"></i>
+                            <a href="#"><?php echo $office_array[$selectID - 1]['title'];?></a></li>
                     </ul>
 				</div>
 			</div>

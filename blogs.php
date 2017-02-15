@@ -36,8 +36,6 @@
 	    	<h2 class="alignCenter">Evénements précédents</h2>
 	        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	            <!-- Indicators -->
-
-
                 <div id="blogs" class="container-fluid">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -110,7 +108,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 	    </div>
 	    

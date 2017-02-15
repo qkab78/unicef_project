@@ -34,7 +34,7 @@ margin-top: 2%;
 
 #myCarousel{
 	/*width: 100%;*/
-	margin-bottom: 10%;
+	/*margin-bottom: 10%;*/
 
 }
 
@@ -46,5 +46,5 @@ margin-top: 2%;
 .carousel_link{margin-bottom: 0.5%; }
 .alignCenter{text-align: center;}
 .calendrierCSS{
-	background-color: #0c1923;
+	/*background-color: #0c1923;*/
 }
